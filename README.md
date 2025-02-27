@@ -103,6 +103,12 @@ Try asking:
 - "Bagaimana cara troubleshooting jika AI tidak merespons perintah suara?"
 - "Kategori perintah apa yang sering digunakan pengguna?"
 - "Berapa persentase error yang dialami pengguna sebelumnya?"
+- "Berapa rata-rata kepuasan pengguna AI Assistant X-3000 sebelumnya?"
+- "Jelaskan cara menghubungkan AI Assistant X-3000 ke Wi-Fi."
+- "Apa teknologi yang digunakan untuk pengenalan wajah AI Assistant X-3000?"
+- "Apa langkah pemeliharaan rutin AI Assistant X-3000?"
+- "Jelaskan perbedaan AI Assistant X-3000 dengan model sebelumnya."
+- "Apa manfaat AI Assistant X-3000 dalam smart home?"
 
 ---
 
