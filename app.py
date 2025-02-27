@@ -25,16 +25,16 @@ FAISS_INDEX_PATH = "database/faiss_index"
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 
 # Initialize session state variables
-if "vector_store" not in st.session_state:
-    st.session_state.vector_store = None
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Initialize FAISS index
-try:
-    st.session_state.vector_store = FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
-except FileNotFoundError:
-    st.session_state.vector_store = db.initialize_faiss_index()
+if "vector_store" not in st.session_state:
+    try:
+        st.session_state.vector_store = FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
+    except FileNotFoundError:
+        st.session_state.vector_store = db.initialize_faiss_index()
+    
 
 # Initialize sql database
 if not os.path.exists(SQL_DB_PATH):
