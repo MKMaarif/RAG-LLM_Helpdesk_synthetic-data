@@ -19,7 +19,10 @@ SQL_DB_PATH = "database/csv_database.db"
 FAISS_INDEX_PATH = "database/faiss_index"
 
 # load model embeddings
-embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+embeddings = OpenAIEmbeddings(
+    model="text-embedding-3-large",
+    openai_api_key=st.secrets["OPENAI_API_KEY"]
+)
 
 # Initialize session state variables
 if "messages" not in st.session_state:
