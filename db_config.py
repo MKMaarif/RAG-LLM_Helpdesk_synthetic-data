@@ -10,8 +10,8 @@ import sqlite3
 import pandas as pd
 import os
 
-PDF_PATH = "files/M. Khoirul Ma'arif_synthetic_data_backup.pdf"
-CSV_PATH = "files/M. Khoirul Ma'arif_synthetic_data.csv"
+PDF_PATH = "files/synthetic_data_backup.pdf"
+CSV_PATH = "files/synthetic_data.csv"
 
 # VECTOR DATABASE
 # load pdf
