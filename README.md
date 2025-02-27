@@ -127,14 +127,12 @@ To deploy on **Hugging Face Spaces or Vercel**, follow these steps:
 ## 🎉 **Contributing**
 Feel free to **fork this project** and submit **pull requests** to improve the chatbot!
 
-👨‍💻 Developed by **[Your Name]**  
-📧 Contact: **[your.email@example.com]**  
-🔗 GitHub: **[github.com/your-repo]**
+👨‍💻 Developed by **MKMaarif**  
+📧 Contact: **[mk.maarif29@gmail.com]**  
+🔗 GitHub: **[github.com/MKMaarif]**
 
 ---
 
 ## 📜 **License**
 This project is licensed under the **MIT License**.
 ```
-
----
