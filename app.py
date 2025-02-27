@@ -2,13 +2,13 @@ import os
 import streamlit as st
 import sqlite3
 import pandas as pd
+import nltk
+nltk.download("stopwords")
 from langchain_openai import OpenAIEmbeddings
 import faiss
 from langchain.vectorstores import FAISS
 from langchain.prompts import ChatPromptTemplate
 from llama_index.llms.groq import Groq
-import nltk
-nltk.download("stopwords")
 
 import db_config as db
 
