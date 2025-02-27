@@ -49,6 +49,13 @@ Create a `.env` file in the root directory and add your **Groq API Key**:
 GROQ_API_KEY=your_groq_api_key
 ```
 
+### **4️⃣ Set Up Secrets Variables for Streamlit**
+Create a `secrets.toml` file in the `.streamlit` directory and add your **Groq API Key**:
+
+```toml
+GROQ_API_KEY=your_groq_api_key
+```
+
 ---
 
 ## 🛠 **How to Run the Chatbot**
