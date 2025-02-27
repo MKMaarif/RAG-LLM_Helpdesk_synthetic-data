@@ -1,7 +1,4 @@
 import os
-from dotenv import load_dotenv
-load_dotenv()
-
 import streamlit as st
 import sqlite3
 import pandas as pd
@@ -41,8 +38,7 @@ if not os.path.exists(SQL_DB_PATH):
     db.initialize_sql_db(SQL_DB_PATH)
 
 # Initialize LLM
-groq_api_key = os.getenv("GROQ_API_KEY")
-llm = llm = Groq(model="llama-3.1-8b-instant", api_key=groq_api_key)
+llm = llm = Groq(model="llama-3.1-8b-instant", api_key=st.secrets["GROQ_API_KEY"])
 
 # Prompt Template
 PROMPT_TEMPLATE ="""
