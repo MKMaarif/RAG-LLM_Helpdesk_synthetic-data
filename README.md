@@ -17,8 +17,8 @@ This is a **Retrieval-Augmented Generation (RAG) chatbot** built with **Streamli
 ## 🚀 **Installation Guide**
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/your-repo/ai-assistant-chatbot.git
-cd ai-assistant-chatbot
+git clone https://github.com/MKMaarif/RAG-LLM_Helpdesk_synthetic-data.git
+cd MKMaarif/RAG-LLM_Helpdesk_synthetic-data
 ```
 
 ### **2️⃣ Set Up Python Environment**
