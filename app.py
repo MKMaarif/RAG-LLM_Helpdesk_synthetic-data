@@ -10,9 +10,19 @@ from llama_index.llms.groq import Groq
 
 import db_config as db
 
-# Set up Streamlit UI
-st.set_page_config(page_title="AI Assistant X-3000 Helpdesk")
-st.title("🤖 AI Assistant X-3000 Helpdesk")
+import nltk
+
+# Set an environment variable for NLTK data directory
+NLTK_DATA_DIR = "/tmp/nltk_data"
+os.environ["NLTK_DATA"] = NLTK_DATA_DIR
+
+# Ensure the directory exists
+if not os.path.exists(NLTK_DATA_DIR):
+    os.makedirs(NLTK_DATA_DIR, exist_ok=True)
+
+# Download the necessary data
+nltk.data.path.append(NLTK_DATA_DIR)
+nltk.download("stopwords", download_dir=NLTK_DATA_DIR, quiet=True)
 
 # Database path
 SQL_DB_PATH = "database/csv_database.db"
@@ -131,6 +141,10 @@ def query_retrieval(question: str):
             return f"Terjadi kesalahan SQL: {e}"
     
     return response
+
+# Set up Streamlit UI
+st.set_page_config(page_title="AI Assistant X-3000 Helpdesk")
+st.title("🤖 AI Assistant X-3000 Helpdesk")
 
 # Chatbot UI
 for message in st.session_state.messages:
