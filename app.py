@@ -5,6 +5,7 @@ import pandas as pd
 import nltk
 nltk.download("stopwords")
 nltk.download("punkt")
+nltk.download("punkt_tab")
 from langchain_openai import OpenAIEmbeddings
 import faiss
 from langchain.vectorstores import FAISS
