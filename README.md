@@ -2,6 +2,10 @@
 # 🤖 AI Assistant X-3000 Helpdesk Chatbot
 
 This is a **Retrieval-Augmented Generation (RAG) chatbot** built with **Streamlit, FAISS, and SQLite**, powered by **LLaMA-3.1-8B-instant** from Groq API. The chatbot retrieves relevant information from a synthetic **PDF document** and **structured CSV dataset**, generating responses based on the **best available context**.
+---
+
+## 🔗 Deployment Link
+[https://rag-llm-app-desk-aagspmk7srfw7joxukqvlt.streamlit.app]
 
 ---
 
